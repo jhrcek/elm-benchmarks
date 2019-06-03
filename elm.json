@@ -7,7 +7,8 @@
     "dependencies": {
         "direct": {
             "elm/core": "1.0.2",
-            "elm-explorations/benchmark": "1.0.1"
+            "elm-explorations/benchmark": "1.0.1",
+            "turboMaCk/any-set": "1.1.1"
         },
         "indirect": {
             "BrianHicks/elm-trend": "2.1.2",
@@ -19,7 +20,8 @@
             "elm/time": "1.0.0",
             "elm/url": "1.0.0",
             "elm/virtual-dom": "1.0.2",
-            "mdgriffith/style-elements": "5.0.1"
+            "mdgriffith/style-elements": "5.0.1",
+            "turboMaCk/any-dict": "1.1.0"
         }
     },
     "test-dependencies": {
