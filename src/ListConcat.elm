@@ -22,9 +22,16 @@ suite =
 
 
 mkBench : String -> ( Int, Int ) -> (List (List Int) -> List Int) -> Benchmark
-mkBench functionName ( m, n ) concatFuction =
-    benchmark (functionName ++ " (" ++ String.fromInt m ++ " lists of lenth " ++ String.fromInt n ++ ")") <|
-        \() -> concatFuction (mkList m n)
+mkBench functionName ( m, n ) =
+    let
+        list =
+            mkList m n
+
+        title =
+            functionName ++ " (" ++ String.fromInt m ++ " lists of lenth " ++ String.fromInt n ++ ")"
+    in
+    \concatFuction ->
+        benchmark title <| \() -> concatFuction list
 
 
 fastConcat : List (List a) -> List a
