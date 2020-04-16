@@ -1,4 +1,4 @@
-module ListConcat exposing (main)
+module Fusion exposing (main)
 
 import Benchmark exposing (Benchmark, benchmark, describe)
 import Benchmark.Runner exposing (BenchmarkProgram, program)
